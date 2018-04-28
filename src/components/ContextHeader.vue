@@ -1,12 +1,9 @@
 <template>
-  <el-row id = "row-header" style="height: 60%;padding-top: 12px;text-align: center">
+  <el-row id = "row-header" style="height: 60%;padding-top: 12px;text-align: center" >
 
     <el-col :span="6" class = "header-div" >
-      <el-breadcrumb separator-class="el-icon-arrow-right">
-        <el-breadcrumb-item :to="{ path: '/' }">管理</el-breadcrumb-item>
-        <el-breadcrumb-item>活动管理</el-breadcrumb-item>
-        <el-breadcrumb-item>活动列表</el-breadcrumb-item>
-        <el-breadcrumb-item>{{$store.state.a}} </el-breadcrumb-item>
+      <el-breadcrumb separator-class="el-icon-arrow-right" >
+        <el-breadcrumb-item v-for="item in this.$store.state.header.info">{{item}}</el-breadcrumb-item><!--:to="{ path: '/' }"-->
       </el-breadcrumb>
     </el-col>
 

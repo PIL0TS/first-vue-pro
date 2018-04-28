@@ -25,11 +25,11 @@
         >
         </el-table-column>
         <el-table-column
-          label="姓名"
+          label="出发地"
           prop="name"/>
         <el-table-column
           prop="sex"
-          label="性别"
+          label="目的地"
         >
         </el-table-column>
         <el-table-column

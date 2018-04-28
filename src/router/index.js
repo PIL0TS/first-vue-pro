@@ -6,6 +6,12 @@ import Context from '@/page/Context';
 import ContextMain from '@/components/ContextMain'
 
 import UserContextMain from '@/components/user/UserContextMain'
+import LineContextMain from '@/components/line/LineContextMain'
+import BusContextMain from '@/components/bus/BusContextMain'
+import TicketContextMain from '@/components/ticket/TicketContextMain'
+
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -27,24 +33,24 @@ export default new Router({
           component: ContextMain
         },
         {
-          path: 'user',
-          name: 'user',
+          path: 'users',
+          name: 'users',
           component: UserContextMain
         },
         {
           path: 'bus',
           name: 'bus',
-          component: ContextMain
+          component: BusContextMain
         },
         {
           path: 'line',
           name: 'line',
-          component: ContextMain
+          component: LineContextMain
         },
         {
           path: 'ticket',
           name: 'ticket',
-          component:  ContextMain
+          component:  TicketContextMain
         }
       ]
     }

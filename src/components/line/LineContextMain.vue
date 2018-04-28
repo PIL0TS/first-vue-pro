@@ -8,7 +8,7 @@
       <el-main id="main">
         <query-bar style="padding: 0px 8px" @query="setQueryParam"/>
         <div class="button-bar">
-          <el-tooltip class="item" effect="dark" content="添加用户" placement="top">
+          <el-tooltip class="item" effect="dark" content="添加路线" placement="top">
             <el-button size="mini" type="primary" @click="openEditDialog()" icon="el-icon-plus">  </el-button>
             <el-button size="mini" type="primary"  @click="openEditDialog('update')" icon="el-icon-edit">  </el-button>
           </el-tooltip>
@@ -195,9 +195,9 @@
 </template>
 
 <script>
-  import QueryBar from '@/components/user/QueryBar'
+  import QueryBar from '@/components/line/QueryBar'
   import ContextHeader from '@/components/ContextHeader'
-  import ListBar from '@/components/user/ListBar'
+  import ListBar from '@/components/line/ListBar'
   import util from '@/util/util.js'
   import store from '@/store'
 

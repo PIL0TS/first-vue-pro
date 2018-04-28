@@ -28,32 +28,6 @@ let tempList = [];
     data(){
       return{
         tempParam : this.$store.state,
-        queryList : [
-          {
-            id : 0,
-            type : "input",
-            name : "user.userName",
-            text : "姓名"
-
-          },
-          {
-            id : 1,
-            type : "select",
-            name : "user.sex",
-            text : "性别",
-            val : "234",
-            options : [
-              {
-                code : '女',
-                text : '女'
-              },
-              {
-                code : '男',
-                text : '男'
-              }
-            ]
-          }
-        ],
         queryParam : {
 
         }

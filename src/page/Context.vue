@@ -2,19 +2,16 @@
   <div id="context" style="height: 100%;overflow-x: hidden" >
 
     <el-container id='contextBox' style="height: 105%;width:auto">
-
-
-
       <el-scrollbar style="height: 100%; width: 15%">
         <el-aside  id="aside" style="height: 100%; width: auto">
 
-          <context-aside   style="height: 1100px" ></context-aside>
-
+          <context-aside   style="height: 1100px" />
         </el-aside>
+
       </el-scrollbar>
       <el-container style="height: 100%" >
 
-        <router-view></router-view>
+        <router-view />
       </el-container>
       <!--<el-footer id="footer"></el-footer>-->
 
@@ -63,7 +60,12 @@
     },
     mounted() {
       this.setHeigth()
-    }
+    },
+    computed: {
+      key() {
+        return this.$route.name !== undefined? this.$route.name +new Date(): this.$route +new Date()
+      }
+    },
 
   }
 
